@@ -27,8 +27,10 @@ export const TodoForm: FC<{action?: string; todo?: TODO}> = ({
         };
         dispatch(addTodo(newTodo));
       } else {
-        const newTodo = {...todo, title, description, editMode: false};
-        dispatch(editTodo(newTodo));
+        if (todo) {
+          const newTodo = {...todo, title, description, editMode: false};
+          dispatch(editTodo(newTodo));
+        }
       }
 
       setTitle('');
