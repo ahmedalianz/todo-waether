@@ -37,7 +37,7 @@ export const Weather = () => {
     }
   }, []);
 
-  const {loading, data, data2} = useCallApi(lat, long);
+  const {loading, data, data2} = useCallApi(lat as number, long as number);
   const toggleDialog = () => {
     setOpenDialog(prev => !prev);
   };
