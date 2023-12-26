@@ -40,7 +40,7 @@ export default function useCallApi(lat: number, long: number) {
   };
   useEffect(() => {
     callApi();
-  }, []);
+  }, [lat, long]);
   return {
     loading,
     data,
