@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import {useDispatch, useSelector} from 'react-redux';
 import './App.css';
-import {TodoForm, TodoList} from './components';
+import {TodoForm, TodoList, Weather} from './components';
 import {RootState} from './store';
 import {toggleTheme} from './store/themeSlice';
 function App() {
